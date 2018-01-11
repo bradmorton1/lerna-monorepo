@@ -6,16 +6,43 @@
 5 silly isInitialized true
 6 silly existsSync /Users/NHS.UK/Desktop/Gits/node-monorepo/VERSION
 7 silly initialize attempt
-8 info current version 0.0.0
+8 info current version 0.0.1
 9 silly isDetachedHead
 10 silly getCurrentBranch
-11 error initialize caught error
-12 error Error: fatal: ambiguous argument 'HEAD': unknown revision or path not in the working tree.
-12 error Use '--' to separate paths from revisions, like this:
-12 error 'git <command> [<revision>...] -- [<file>...]'
-12 error
-12 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
-12 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
-12 error     at Function.getCurrentBranch (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:194:59)
-12 error     at Function.isDetachedHead (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:45:37)
-12 error     at PublishCommand.initialize (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:242:36)
+11 verbose getCurrentBranch master
+12 verbose isDetachedHead false
+13 silly getCurrentBranch
+14 verbose getCurrentBranch master
+15 silly getUpdates
+16 info Checking for updated packages...
+17 silly hasTags
+18 verbose hasTags false
+19 info Comparing with initial commit.
+20 verbose updated hello-world-express
+21 verbose updated hello-world-express
+22 info Checking for prereleased packages...
+23 silly collectDependents
+24 silly isPackageDependentOf hello-world-express hello-world-express
+25 silly isPackageDependentOf hello-world-express hello-world-express
+26 silly collectUpdates
+27 verbose has filtered update hello-world-express
+28 verbose has filtered update hello-world-express
+29 silly initialize success
+30 silly execute attempt
+31 silly addFile /Users/NHS.UK/Desktop/Gits/node-monorepo/lerna.json
+32 silly runScriptSync preversion hello-world-express
+33 silly runScriptSync version hello-world-express
+34 silly runScriptSync preversion hello-world-express
+35 silly runScriptSync version hello-world-express
+36 silly addFile /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy/package.json
+37 silly addFile /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express/package.json
+38 error execute caught error
+39 error Error: fatal: Pathspec 'packages/node-express/package.json' is in submodule 'packages/node-express'
+39 error
+39 error     at Function.module.exports.sync (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:303:26)
+39 error     at Function.execSync (/usr/local/lib/node_modules/lerna/lib/ChildProcessUtilities.js:59:30)
+39 error     at Function.addFile (/usr/local/lib/node_modules/lerna/lib/GitUtilities.js:78:39)
+39 error     at /usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:683:41
+39 error     at Array.forEach (<anonymous>)
+39 error     at PublishCommand.updateUpdatedPackages (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:682:22)
+39 error     at PublishCommand.execute (/usr/local/lib/node_modules/lerna/lib/commands/PublishCommand.js:310:12)

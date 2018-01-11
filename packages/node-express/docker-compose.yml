@@ -1,0 +1,10 @@
+version: '2'
+services:
+  express-hello-world:
+    build:
+      context:
+      args:
+        NODE_ENV: ${NODE_ENV-development}
+    ports:
+     - "3000:3000"
+    container_name: express-hello-world
