@@ -1,0 +1,14 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "description": "A quick tooled together monorepo using Node packages and Lerna",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Brad Morton",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^2.6.0"
+  }
+}
