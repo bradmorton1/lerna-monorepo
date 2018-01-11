@@ -1,6 +1,6 @@
 {
-  "name": "hello-world-express",
-  "version": "0.0.3",
+  "name": "hello-world-express-copy",
+  "version": "0.1.0",
   "description": "A quick tooled together application, used to demonstrate benefits of a monorepo alongside other projects",
   "main": "app.js",
   "scripts": {
@@ -16,5 +16,8 @@
   },
   "devDependencies": {
     "request": "^2.83.0"
+  },
+  "directories": {
+    "test": "test"
   }
 }
