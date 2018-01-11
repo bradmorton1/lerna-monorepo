@@ -1,0 +1,20 @@
+{
+  "name": "hello-world-express",
+  "version": "1.0.0",
+  "description": "A quick tooled together application, used to demonstrate benefits of a monorepo alongside other projects",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Brad Morton",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "express": "^4.16.2",
+    "mocha": "^4.1.0"
+  },
+  "devDependencies": {
+    "request": "^2.83.0"
+  }
+}

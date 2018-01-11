@@ -1,0 +1,20 @@
+sudo_required: true
+
+language: node_js
+node_js: node
+
+services: docker
+
+before_install:
+  - docker build -t bradmorton1/express-hello-world .
+  - docker tag express-hello-world bradmorton1/express-hello-world
+
+script:
+  - docker images bradmorton1/express-hello-world
+  - npm test
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login --username ="$DOCKER_USERNAME" --password ="$DOCKER_PASSWORD";
+    docker push bradmorton1/express-hello-world;
+    fi
