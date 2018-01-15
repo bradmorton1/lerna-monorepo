@@ -1,6 +1,6 @@
 {
   "name": "shared-resource",
-  "version": "1.0.0",
+  "version": "0.3.0",
   "description": "Shared resource for the monorepo for experimentation",
   "main": "index.js",
   "scripts": {
