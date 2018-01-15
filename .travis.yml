@@ -7,5 +7,5 @@ services:
   - docker
 
 script:
-  - test-scripts.sh
+  - ./test-scripts.sh
   #- python buid.py
