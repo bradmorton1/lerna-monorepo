@@ -11,4 +11,4 @@ before_install:
 
 script:
   - ./test-scripts.sh
-  #- python buid.py
+  #- python build.py
