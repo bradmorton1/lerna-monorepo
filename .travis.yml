@@ -6,6 +6,9 @@ node_js: node
 services: 
   - docker
 
+before_install:
+  - chmod +x test-scripts.sh
+
 script:
   - ./test-scripts.sh
   #- python buid.py
