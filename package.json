@@ -4,7 +4,9 @@
   "description": "A quick tooled together monorepo using Node packages and Lerna",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "postinstall": "lerna bootstrap --hoist",
+    "release": "lerna publish --conventional commits"
   },
   "author": "Brad Morton",
   "license": "ISC",

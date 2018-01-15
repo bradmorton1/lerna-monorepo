@@ -12,7 +12,8 @@
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
     "express": "^4.16.2",
-    "mocha": "^4.1.0"
+    "mocha": "^4.1.0",
+    "shared-resource": "^1.0.0"
   },
   "devDependencies": {
     "request": "^2.83.0"
