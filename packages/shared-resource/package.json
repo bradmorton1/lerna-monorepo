@@ -1,6 +1,6 @@
 {
   "name": "shared-resource",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Shared resource for the monorepo for experimentation",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Brad Morton",
   "license": "ISC",
   "dependencies": {
-    "hello-world-express": "^0.6.0",
-    "hello-world-express-copy": "^0.6.0"
+    "hello-world-express": "^0.7.0",
+    "hello-world-express-copy": "^0.7.0"
   }
 }
