@@ -1,6 +1,6 @@
 {
   "name": "bm-personal-shared-resource",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Shared resource for the monorepo for experimentation",
   "main": "index.js",
   "scripts": {
