@@ -11,6 +11,6 @@
   "author": "Brad Morton",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^2.6.0" 
+    "lerna": "^2.6.0"
   }
 }

@@ -1,1 +1,6 @@
-console.log('Loading shared resources');
+
+var planetsObj = require('./planets.json');
+
+
+module.exports = planetsObj;
+

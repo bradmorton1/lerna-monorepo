@@ -1,140 +1,15 @@
-0 silly input [ 'publish' ]
-1 silly flags { _: [ 'publish' ], 'reject-cycles': false, rejectCycles: false }
+0 silly input [ 'bm-personal-shared-package' ]
+1 silly flags { _: [ 'add' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [ 'bm-personal-shared-package' ] }
 2 verbose rootPath /Users/NHS.UK/Desktop/Gits/node-monorepo
 3 info version 2.6.0
 4 silly isInitialized
 5 silly isInitialized true
 6 silly existsSync /Users/NHS.UK/Desktop/Gits/node-monorepo/VERSION
 7 silly initialize attempt
-8 info current version 0.1.0
-9 silly isDetachedHead
-10 silly getCurrentBranch
-11 verbose getCurrentBranch master
-12 verbose isDetachedHead false
-13 silly getCurrentBranch
-14 verbose getCurrentBranch master
-15 silly getUpdates
-16 info Checking for updated packages...
-17 silly hasTags
-18 verbose hasTags true
-19 silly getLastTag
-20 verbose getLastTag v0.1.0
-21 info Comparing with v0.1.0.
-22 silly diffSinceIn v0.1.0 packages/node-express-copy
-23 silly diff packages/node-express-copy/app.js
-24 silly diffSinceIn v0.1.0 packages/node-express
-25 silly diff packages/node-express/app.js
-26 silly diffSinceIn v0.1.0 packages/shared-resource
-27 silly diff
-28 verbose updated hello-world-express-copy
-29 verbose updated hello-world-express
-30 info Checking for prereleased packages...
-31 silly collectDependents
-32 silly isPackageDependentOf hello-world-express-copy hello-world-express-copy
-33 silly isPackageDependentOf hello-world-express-copy hello-world-express
-34 silly isPackageDependentOf hello-world-express hello-world-express-copy
-35 silly isPackageDependentOf hello-world-express hello-world-express
-36 silly isPackageDependentOf shared-resource hello-world-express-copy
-37 silly isPackageDependentOf shared-resource hello-world-express
-38 silly collectUpdates
-39 verbose has filtered update hello-world-express-copy
-40 verbose has filtered update hello-world-express
-41 silly initialize success
-42 silly execute attempt
-43 silly addFile /Users/NHS.UK/Desktop/Gits/node-monorepo/lerna.json
-44 silly runScriptSync preversion hello-world-express-copy
-45 silly runScriptSync version hello-world-express-copy
-46 silly runScriptSync preversion hello-world-express
-47 silly runScriptSync version hello-world-express
-48 silly addFile /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy/package.json
-49 silly addFile /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express/package.json
-50 silly commit v0.2.0
-51 verbose commit [ 'commit', '--no-gpg-sign', '-m', 'v0.2.0' ]
-52 silly addTag v0.2.0
-53 silly runScriptSync postversion hello-world-express-copy
-54 silly runScriptSync postversion hello-world-express
-55 info publish Publishing packages to npm...
-56 silly existsSync /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy/scripts/prepublish.js
-57 verbose execScript No prepublish script found at /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy/scripts/prepublish.js
-58 silly existsSync /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express/scripts/prepublish.js
-59 verbose execScript No prepublish script found at /Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express/scripts/prepublish.js
-60 verbose publishing hello-world-express-copy
-61 silly publishTaggedInDir latest node-express-copy
-62 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy' }
-63 verbose publishing hello-world-express
-64 silly publishTaggedInDir latest node-express
-65 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express' }
-66 error publish Retrying failed publish: hello-world-express-copy
-67 verbose publish error undefined
-68 verbose publishing hello-world-express-copy
-69 silly publishTaggedInDir latest node-express-copy
-70 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy' }
-71 error publish Retrying failed publish: hello-world-express
-72 verbose publish error undefined
-73 verbose publishing hello-world-express
-74 silly publishTaggedInDir latest node-express
-75 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express' }
-76 error publish Retrying failed publish: hello-world-express-copy
-77 verbose publish error undefined
-78 verbose publishing hello-world-express-copy
-79 silly publishTaggedInDir latest node-express-copy
-80 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy' }
-81 error publish Retrying failed publish: hello-world-express
-82 verbose publish error undefined
-83 verbose publishing hello-world-express
-84 silly publishTaggedInDir latest node-express
-85 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express' }
-86 error publish Retrying failed publish: hello-world-express
-87 verbose publish error undefined
-88 verbose publishing hello-world-express
-89 silly publishTaggedInDir latest node-express
-90 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express' }
-91 error publish Retrying failed publish: hello-world-express-copy
-92 verbose publish error undefined
-93 verbose publishing hello-world-express-copy
-94 silly publishTaggedInDir latest node-express-copy
-95 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy' }
-96 error publish Retrying failed publish: hello-world-express
-97 verbose publish error undefined
-98 verbose publishing hello-world-express
-99 silly publishTaggedInDir latest node-express
-100 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express' }
-101 error publish Retrying failed publish: hello-world-express-copy
-102 verbose publish error undefined
-103 verbose publishing hello-world-express-copy
-104 silly publishTaggedInDir latest node-express-copy
-105 silly getExecOpts { cwd: '/Users/NHS.UK/Desktop/Gits/node-monorepo/packages/node-express-copy' }
-106 error publish Ran out of retries while publishing hello-world-express Error: Command failed: npm publish --tag latest
-106 error publish npm ERR! publish Failed PUT 404
-106 error publish npm ERR! code E404
-106 error publish npm ERR! 404 User not found : hello-world-express
-106 error publish npm ERR! 404
-106 error publish npm ERR! 404  'hello-world-express' is not in the npm registry.
-106 error publish npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
-106 error publish npm ERR! 404
-106 error publish npm ERR! 404 Note that you can also install from a
-106 error publish npm ERR! 404 tarball, folder, http url, or git url.
-106 error publish
-106 error publish npm ERR! A complete log of this run can be found in:
-106 error publish npm ERR!     /Users/NHS.UK/.npm/_logs/2018-01-12T08_51_09_769Z-debug.log
-106 error publish
-106 error publish     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-106 error publish     at <anonymous>
-106 error publish     at process._tickCallback (internal/process/next_tick.js:188:7)
-107 error execute callback with error
-108 error Error: Command failed: npm publish --tag latest
-108 error npm ERR! publish Failed PUT 404
-108 error npm ERR! code E404
-108 error npm ERR! 404 User not found : hello-world-express
-108 error npm ERR! 404
-108 error npm ERR! 404  'hello-world-express' is not in the npm registry.
-108 error npm ERR! 404 You should bug the author to publish it (or use the name yourself!)
-108 error npm ERR! 404
-108 error npm ERR! 404 Note that you can also install from a
-108 error npm ERR! 404 tarball, folder, http url, or git url.
-108 error
-108 error npm ERR! A complete log of this run can be found in:
-108 error npm ERR!     /Users/NHS.UK/.npm/_logs/2018-01-12T08_51_09_769Z-debug.log
-108 error
-108 error     at Promise.all.then.arr (/usr/local/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
-108 error     at <anonymous>
+8 error initialize callback with error
+9 error Error: Package `bm-personal-shared-package` doesn't exist
+9 error     at got.then.catch.err (/usr/local/lib/node_modules/lerna/node_modules/package-json/index.js:62:11)
+9 error     at <anonymous>

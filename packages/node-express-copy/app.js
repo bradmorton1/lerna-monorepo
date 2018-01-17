@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
-const planets = require('../shared-resource/planets.json')
+var planetsObj = require('../shared-resource/index');
+var planets = planetsObj.planets;
 
-app.get('/', (req, res) => res.send("Hello " + planets.planets[2] + "!"))
+app.get('/', (req, res) => res.send("Hello " + planets[2] + "!"))
 
 let server = app.listen(3000, () => console.log('Example app listening on port 3000'))
 
