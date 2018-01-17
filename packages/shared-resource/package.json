@@ -1,15 +1,11 @@
 {
-  "name": "shared-resource",
-  "version": "0.7.0",
+  "name": "bm-personal-shared-resource",
+  "version": "0.7.1",
   "description": "Shared resource for the monorepo for experimentation",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "author": "Brad Morton",
-  "license": "ISC",
-  "dependencies": {
-    "hello-world-express": "^0.7.0",
-    "hello-world-express-copy": "^0.7.0"
-  }
+  "license": "ISC"
 }
